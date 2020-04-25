@@ -79,7 +79,7 @@ def main():
         plt.xlabel('')
         plt.title(col_dist, {'fontsize': 20})
         st.pyplot()
-    correlation = st.checkbox('Correlacao')
+    correlation = st.checkbox('Correlation')
     if correlation:
         st.markdown('Correlation Heatmap')
         st.write(ct_correlation(df, data_col))
