@@ -43,8 +43,8 @@ def main():
     st.sidebar.title('Find out more:')
     st.sidebar.markdown('* [LinkedIn](https://www.linkedin.com/in/marcel-rocha-nascimento-8185a6148/) - '
                         '[GitHub](https://github.com/MarcelRocha)')
-    dataset_url = 'http://mlr.cs.umass.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv'
-    df = pd.read_csv(dataset_url, sep=';')
+    #dataset_url = 'http://mlr.cs.umass.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv'
+    df = pd.read_csv('winequality-red.csv')
     data_col = list(df.columns)
     st.markdown('**Dataframe visualization**')
     number = st.slider('Choose the number of rows you want to see', min_value=1, max_value=20)
